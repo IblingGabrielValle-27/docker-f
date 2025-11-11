@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web:
+    image: ibling/front:latest
+    container_name: web_frontend
+    ports:
+      - "80:80"
+    restart: always
+  api:
+    image: ibling/backend4:latest
+    container_name: api_backend
+    ports:
+      - "3000:3000"
+    restart: always
